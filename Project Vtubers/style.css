@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    background-image: url('img.jpeg'); /* Añade la imagen de fondo aquí */
+    background-size: cover;
+    background-position: center;
+    color: #471c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(175, 107, 175, 0.9); /* Fondo semi-transparente */
+    padding: 40px 60px;
+    box-shadow: 0 0 10px rgba(224, 18, 18, 0.5);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+.input-group {
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #caaadd;
+    color: #7d4d4d;
+    transition: background-color 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #d8bce2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #97199b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b03027;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #3f2a18;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7d4d4d;
+    text-decoration: underline;
+}

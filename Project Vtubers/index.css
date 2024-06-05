@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #be8ad350;
+}
+
+header {
+    background: #e1c4e2;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.wiki-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.wiki-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #c0b2a7;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar {
+    background: #e1c4e2;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sidebar ul li {
+    margin: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background: #ccc;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.main-content {
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.main-content article {
+    width: 70%;
+}
+
+.main-content aside {
+    width: 25%;
+    background: #c0b2a7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.main-content aside h3 {
+    margin-top: 0;
+}
+
+.main-content aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
